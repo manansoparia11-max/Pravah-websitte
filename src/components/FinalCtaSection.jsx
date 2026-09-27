@@ -1,7 +1,7 @@
 import React from 'react';
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
-export default function FinalCtaSection({ onOpenProjectModal }) {
+export default function FinalCtaSection() {
   return (
     <section className="relative py-32 sm:py-44 bg-[#FAFAF8] border-b border-neutral-200/70 text-center">
       
@@ -21,35 +21,40 @@ export default function FinalCtaSection({ onOpenProjectModal }) {
         </h2>
 
         {/* Supporting Text */}
-        <p className="text-lg sm:text-xl text-neutral-600 max-w-xl mx-auto font-light leading-relaxed mb-12">
-          Let’s build a digital presence where strategy, creativity, and technology work together as one system.
+        <p className="text-lg sm:text-xl text-neutral-600 max-w-xl mx-auto font-light leading-relaxed mb-10">
+          Where strategy, creativity, and technology work together as one unbroken current.
         </p>
 
-        {/* The Two Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-12">
-          <button
-            onClick={onOpenProjectModal}
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm font-semibold text-white bg-neutral-950 hover:bg-purple-700 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
-          >
-            <span>Start a Project</span>
-            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </button>
-
+        {/* Let's Connect CTA */}
+        <div className="flex items-center justify-center mb-12">
           <a
-            href="https://wa.me/918302569311?text=Hi%20Pravah%2C%20I%20have%20a%20business%20ready%20to%20move.%20I%20would%20like%20to%20discuss%20a%20project."
+            href="https://www.instagram.com/pravah_growth?stkn=aHlkaXBnd3lxYTc0"
             target="_blank"
-            rel="noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-sm font-medium text-neutral-800 bg-white hover:bg-neutral-100 border border-neutral-300 transition-colors shadow-xs"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center gap-2.5 px-9 py-4 rounded-full text-sm font-semibold text-white bg-neutral-950 hover:bg-purple-700 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
           >
-            <MessageCircle className="w-4 h-4 text-emerald-600" />
-            <span>Talk to Pravah</span>
+            <svg 
+              className="w-4 h-4 text-pink-400 group-hover:text-white transition-colors" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span>Let's Connect</span>
+            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-neutral-400 group-hover:text-white" />
           </a>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-8 text-xs font-mono text-neutral-400">
-          <span>✓ WRITTEN SCOPE IN 24H</span>
-          <span>✓ DIRECT FOUNDER REVIEW</span>
-          <span>✓ NO SALES FOG</span>
+        <div className="flex flex-wrap items-center justify-center gap-8 text-xs font-mono text-neutral-500">
+          <span>✦ FOUNDER RESPONSIBILITY</span>
+          <span>✦ ONE UNIFIED SYSTEM</span>
+          <span>✦ MEASURABLE CLARITY</span>
         </div>
 
       </div>

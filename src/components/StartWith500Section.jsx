@@ -49,7 +49,7 @@ export default function StartWith500Section() {
           {/* Left Column: Clear positioning */}
           <div className="lg:col-span-6 space-y-6">
             <p className="text-xl sm:text-2xl text-neutral-900 font-light leading-relaxed">
-              No bloated retainers. No long contracts. No sales fog.
+              No bloated retainers. No long contracts. No guesswork.
             </p>
             <p className="text-base sm:text-lg text-neutral-600 font-light leading-relaxed">
               We believe testing a working relationship should be frictionless. For <strong className="text-neutral-950 font-semibold">₹500</strong>, we conduct an honest, thorough diagnostic of your digital presence and provide a clear plan of action.

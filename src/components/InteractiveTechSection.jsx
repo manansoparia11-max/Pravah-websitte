@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { RotateCw, MessageSquare, Calculator, Sparkles } from 'lucide-react';
+import { RotateCw, Calculator, Sparkles, Layers, CheckCircle2 } from 'lucide-react';
 
-export default function InteractiveTechSection({ onOpenProjectModal }) {
+export default function InteractiveTechSection() {
   const [activeTab, setActiveTab] = useState('3d');
   const [gemColor, setGemColor] = useState('purple');
   const [rotAngle, setRotAngle] = useState(30);
@@ -32,7 +32,7 @@ export default function InteractiveTechSection({ onOpenProjectModal }) {
             </span>
           </h2>
           <p className="text-base text-neutral-600 font-light">
-            We don't build static brochures. We build interactive tools, 3D product experiences, and conversion pipelines that make your business memorable.
+            We don't build static brochures. We build interactive tools, 3D product experiences, and automated systems that make your business memorable.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function InteractiveTechSection({ onOpenProjectModal }) {
           {[
             { id: '3d', label: '3D & AR Product View', icon: RotateCw },
             { id: 'calc', label: 'Growth & ROI Calculator', icon: Calculator },
-            { id: 'wa', label: 'WhatsApp Lead Pipeline', icon: MessageSquare }
+            { id: 'ops', label: 'Automated Operations', icon: Layers }
           ].map((tab) => {
             const TabIcon = tab.icon;
             const isSelected = activeTab === tab.id;
@@ -152,7 +152,7 @@ export default function InteractiveTechSection({ onOpenProjectModal }) {
                 Simulate Your Growth Lift
               </h3>
               <p className="text-neutral-600 font-light text-sm leading-relaxed mb-6">
-                Removing friction from mobile load times and replacing clunky forms with 1-tap WhatsApp routing compounds customer inquiries immediately.
+                Removing friction from mobile load times and replacing clunky interfaces with sub-second responsive experiences compounds customer inquiries immediately.
               </p>
 
               <div className="space-y-4">
@@ -235,40 +235,57 @@ export default function InteractiveTechSection({ onOpenProjectModal }) {
           </div>
         )}
 
-        {/* Tab 3: WhatsApp Pipeline */}
-        {activeTab === 'wa' && (
+        {/* Tab 3: Automated Operations */}
+        {activeTab === 'ops' && (
           <div className="p-8 sm:p-12 rounded-3xl bg-white border border-neutral-200/80 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center text-left">
             <div className="lg:col-span-6">
-              <span className="text-xs font-mono text-emerald-700 font-bold uppercase tracking-wider block mb-2">
-                Frictionless Conversion
+              <span className="text-xs font-mono text-purple-700 font-bold uppercase tracking-wider block mb-2">
+                Unified Automation
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold text-neutral-950 mb-3">
-                1-Tap WhatsApp Lead Flow
+                Automated Operational Flow
               </h3>
               <p className="text-neutral-600 font-light text-sm leading-relaxed mb-6">
-                No long forms. When someone lands on your site or clicks an ad, WhatsApp opens directly with a pre-filled inquiry, syncing instantly with your team.
+                Zero manual bottlenecks. When visitors engage with your catalog, calculator, or booking flow, data synchronizes instantly across your internal operational tools.
               </p>
 
               <div className="space-y-2 text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  <span>Instant response with brochure or booking link in &lt; 2s</span>
+                  <CheckCircle2 className="w-4 h-4 text-purple-600 flex-shrink-0" />
+                  <span>Real-time data synchronization in &lt; 500ms</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  <span>Direct lead sync to Google Sheets, Notion, or CRM</span>
+                  <CheckCircle2 className="w-4 h-4 text-purple-600 flex-shrink-0" />
+                  <span>Automated notifications to internal dashboards & inventory</span>
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-6 p-6 rounded-2xl bg-[#F0FDF4] border border-emerald-200 max-w-[340px] mx-auto text-left space-y-3">
-              <div className="p-3 rounded-xl bg-white border border-emerald-100 text-xs text-neutral-700 shadow-xs">
-                "Hi Pravah, I'd like to discuss a digital overhaul for our local retail boutique."
-                <span className="block text-[10px] text-neutral-400 mt-1">11:02 AM ✓✓</span>
+            <div className="lg:col-span-6 p-6 rounded-2xl bg-neutral-50 border border-neutral-200 max-w-[360px] mx-auto text-left space-y-3">
+              <div className="p-3.5 rounded-xl bg-white border border-neutral-200 shadow-xs flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-mono text-neutral-400 uppercase block">Event Triggered</span>
+                  <span className="text-xs font-semibold text-neutral-900">Custom Inquiry Logged</span>
+                </div>
+                <span className="text-[10px] font-mono text-purple-700 bg-purple-50 px-2 py-0.5 rounded-full border border-purple-100 font-semibold">
+                  SYNCED
+                </span>
               </div>
-              <div className="p-3 rounded-xl bg-emerald-600 text-white text-xs shadow-xs">
-                "Namaste! Delighted to connect. Would you prefer a quick 10-minute strategy call today or tomorrow?"
-                <span className="block text-[10px] text-emerald-200 mt-1">11:02 AM</span>
+              <div className="p-3.5 rounded-xl bg-white border border-neutral-200 shadow-xs flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-mono text-neutral-400 uppercase block">Inventory System</span>
+                  <span className="text-xs font-semibold text-neutral-900">Stock Availability Verified</span>
+                </div>
+                <span className="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100 font-semibold">
+                  ACTIVE
+                </span>
+              </div>
+              <div className="p-3.5 rounded-xl bg-neutral-950 text-white shadow-xs flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-mono text-purple-300 uppercase block">Founder Dashboard</span>
+                  <span className="text-xs font-medium text-white">Direct Notification Dispatched</span>
+                </div>
+                <span className="text-[10px] font-mono text-emerald-400 font-semibold">0.3s</span>
               </div>
             </div>
           </div>

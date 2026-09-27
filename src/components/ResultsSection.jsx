@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, MousePointerClick, Sparkles, PhoneCall, CheckCircle, MapPin } from 'lucide-react';
+import { Users, MousePointerClick, Sparkles, TrendingUp, CheckCircle, MapPin } from 'lucide-react';
 
 export default function ResultsSection() {
   const metrics = [
@@ -24,8 +24,8 @@ export default function ResultsSection() {
     {
       num: "04",
       name: "Enquiries",
-      icon: PhoneCall,
-      detail: "Direct WhatsApp messages, consultation bookings, and qualified phone inquiries."
+      icon: TrendingUp,
+      detail: "Qualified business inquiries, consultation requests, and confirmed customer bookings."
     },
     {
       num: "05",

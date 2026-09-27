@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         {/* Supporting Narrative */}
         <p className="text-lg sm:text-2xl text-neutral-600 max-w-2xl font-light leading-relaxed mb-10">
-          Pravah helps businesses turn technology, creativity and digital experiences into <strong className="text-neutral-900 font-medium">meaningful growth</strong>.
+          Pravah helps businesses build digital systems that convert attention into <strong className="text-neutral-900 font-medium">measurable commercial action</strong>.
         </p>
 
         {/* Scroll to Content Anchor */}

@@ -1,8 +1,8 @@
 import React from 'react';
 import PravahLogo from './PravahLogo';
-import { ArrowUp, Mail, MessageCircle } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
-export default function Footer({ onOpenProjectModal }) {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -21,14 +21,14 @@ export default function Footer({ onOpenProjectModal }) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-neutral-200/70 text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-neutral-200/70 text-left">
           
           {/* Brand Col */}
-          <div className="lg:col-span-6 flex flex-col justify-between">
+          <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <PravahLogo variant="dark" showTagline={true} className="mb-4" />
               <p className="text-sm text-neutral-500 max-w-sm mt-4 leading-relaxed font-light">
-                Founder-led digital growth consultancy. Working with ambitious local and growing businesses across India.
+                Technology-first digital consultancy for local and scaling businesses. Built and delivered by the founder.
               </p>
             </div>
 
@@ -38,11 +38,11 @@ export default function Footer({ onOpenProjectModal }) {
           </div>
 
           {/* Capabilities Col */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4">
             <span className="text-xs font-mono text-neutral-900 font-bold tracking-widest uppercase block mb-6">
               Capabilities
             </span>
-            <ul className="space-y-3 text-sm">
+            <ul className="grid grid-cols-2 gap-y-3 gap-x-6 text-sm">
               {capabilities.map((cap) => (
                 <li key={cap.name}>
                   <a
@@ -64,47 +64,27 @@ export default function Footer({ onOpenProjectModal }) {
             </span>
             <ul className="space-y-3 text-sm">
               <li>
-                <button
-                  onClick={onOpenProjectModal}
-                  className="hover:text-purple-700 transition-colors flex items-center gap-2 cursor-pointer"
-                >
-                  <Mail className="w-4 h-4 text-purple-600" />
-                  <span>Start a Project</span>
-                </button>
-              </li>
-              <li>
                 <a
-                  href="https://wa.me/918302569311?text=Hi%20Pravah%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                  href="https://www.instagram.com/pravah_growth?stkn=aHlkaXBnd3lxYTc0"
                   target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-purple-700 transition-colors flex items-center gap-2"
+                  rel="noopener noreferrer"
+                  className="hover:text-purple-700 transition-colors flex items-center gap-2 group"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-600" />
-                  <span>WhatsApp</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:contact@pravahgrowth.com"
-                  className="hover:text-purple-700 transition-colors flex items-center gap-2"
-                >
-                  <Mail className="w-4 h-4 text-purple-600" />
-                  <span>Email</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-purple-700 transition-colors flex items-center gap-2"
-                >
-                  <svg className="w-4 h-4 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg 
+                    className="w-4 h-4 text-pink-600 group-hover:scale-110 transition-transform" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                   </svg>
-                  <span>Instagram</span>
+                  <span>Let's Connect</span>
+                  <span className="text-purple-600 opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
                 </a>
               </li>
             </ul>

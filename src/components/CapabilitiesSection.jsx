@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Globe, Palette, Cpu, TrendingUp, MessageSquare, Zap, ArrowUpRight, Check } from 'lucide-react';
+import React from 'react';
+import { Check } from 'lucide-react';
 
-export default function CapabilitiesSection({ onOpenProjectModal }) {
-  const [selectedCap, setSelectedCap] = useState(null);
-
+export default function CapabilitiesSection() {
   const capabilities = [
     {
       num: "01",
@@ -40,10 +38,10 @@ export default function CapabilitiesSection({ onOpenProjectModal }) {
     {
       num: "05",
       title: "Conversion",
-      sub: "Landing Pages · WhatsApp · Enquiry Systems",
-      desc: "Zero-friction customer handoffs—turning web visitors directly into WhatsApp chats and calls.",
+      sub: "Landing Pages · Frictionless Flow · Enquiry Systems",
+      desc: "Zero-friction customer handoffs—turning web visitors into engaged customers and qualified leads.",
       problem: "Complex contact forms that get abandoned, letting warm leads slip away.",
-      creates: ["High-conversion landing pages", "1-tap WhatsApp business handoff", "Automated instant lead notification"]
+      creates: ["High-conversion landing pages", "Frictionless customer handoff", "Automated instant lead notification"]
     },
     {
       num: "06",
@@ -74,7 +72,7 @@ export default function CapabilitiesSection({ onOpenProjectModal }) {
             </h2>
           </div>
           <p className="text-base text-neutral-600 max-w-md font-light">
-            We assemble the exact strategy, creative and technology required to move your business forward.
+            We combine design thinking, engineering, and growth strategy around your specific business challenge.
           </p>
         </div>
 

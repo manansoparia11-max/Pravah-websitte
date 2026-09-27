@@ -5,23 +5,23 @@ export default function ProcessSection() {
   const steps = [
     {
       num: "01",
-      title: "Understand",
-      desc: "We understand your business economics, customer decision journey, and current digital bottlenecks."
+      title: "Listen",
+      desc: "We study your business model, customer behaviour, and the gaps between your digital presence and commercial reality."
     },
     {
       num: "02",
-      title: "Focus",
-      desc: "We isolate the single highest-leverage growth priority and eliminate the secondary distractions."
+      title: "Prioritize",
+      desc: "We identify the single highest-leverage growth lever and remove every distraction around it."
     },
     {
       num: "03",
-      title: "Build",
-      desc: "We engineer the website, campaign, interactive technology, and WhatsApp pipeline with craft and speed."
+      title: "Engineer",
+      desc: "We design and develop the website, interactive tools, and conversion architecture with craft and precision."
     },
     {
       num: "04",
-      title: "Improve",
-      desc: "We measure real customer actions, eliminate drop-offs, and improve the conversion system continuously."
+      title: "Refine",
+      desc: "We measure real customer actions, close conversion gaps, and compound results every cycle."
     }
   ];
 
@@ -36,13 +36,13 @@ export default function ProcessSection() {
             03 / OUR PROCESS
           </span>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-950 leading-[1.1] mb-6">
-            Structure first.<br />
+            Clarity first.<br />
             <span className="font-editorial italic font-normal text-purple-700">
-              Then creative freedom.
+              Then we build with intent.
             </span>
           </h2>
           <p className="text-base text-neutral-600 font-light">
-            Direct collaboration, fewer layers, and a clear reason behind every decision.
+            One founder, one conversation, one system built with purpose.
           </p>
         </div>
 

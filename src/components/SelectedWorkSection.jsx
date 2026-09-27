@@ -9,8 +9,8 @@ export default function SelectedWorkSection() {
       category: "Specialty Café & Roastery",
       headline: "Turning a local café into a digital experience.",
       icon: Coffee,
-      summary: "Sub-second digital table menu, automated WhatsApp reservation flow, and top-3 local Google Maps ranking.",
-      solution: "Engineered a rapid mobile web app with instant 1-tap WhatsApp table booking and local map pack optimization.",
+      summary: "Sub-second digital table menu, automated table reservation flow, and top-3 local Google Maps ranking.",
+      solution: "Engineered a rapid mobile web app with instant 1-tap table booking and local map pack optimization.",
       outcomes: ["180% surge in advance reservations", "0.4s digital menu load speed", "4.9★ Google authority rating"]
     },
     {
@@ -29,7 +29,7 @@ export default function SelectedWorkSection() {
       category: "Local Retail Flagship",
       headline: "Connecting digital discovery with physical stores.",
       icon: ShoppingBag,
-      summary: "Live local store inventory portal, 1-click 'Hold In-Store' WhatsApp button, and hyper-local search ads.",
+      summary: "Live local store inventory portal, 1-click 'Hold In-Store' reservation, and hyper-local search ads.",
       solution: "Deployed a live inventory lookup with 1-tap 'Hold in Store' reservation for local shoppers within 5km.",
       outcomes: ["140% growth in store visits from Google Search", "38% lower customer acquisition cost", "High-intent footfall conversion"]
     }
@@ -47,9 +47,9 @@ export default function SelectedWorkSection() {
               05 / SELECTED WORK
             </span>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-950 leading-[1.1]">
-              Different businesses.<br />
+              Real businesses.<br />
               <span className="font-editorial italic font-normal text-purple-700">
-                One standard of clarity.
+                Real digital momentum.
               </span>
             </h2>
           </div>
