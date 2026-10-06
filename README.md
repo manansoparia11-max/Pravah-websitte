@@ -1,16 +1,34 @@
-# React + Vite
+# Pravah — In Motion
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive, static website built from the original Pravah demo. Includes interactive 3D scenes, service accordions, keyboard-accessible tabs, a growth calculator, a workflow demo, project details, and an Instagram brief builder.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Install Node.js, open a terminal in this folder, and run:
 
-## React Compiler
+```sh
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open http://127.0.0.1:4173. No dependencies or build step are required.
 
-## Expanding the Oxlint configuration
+## Add to GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Upload all the files **inside this folder**, including the entire `assets` folder, to a new repository. Keep their relative paths unchanged.
+
+To publish with GitHub Pages, go to **Settings → Pages → Deploy from a branch**, select your branch and **/(root)**, and save. For Vercel, import the repository, choose **Other** as the framework, leave the build command empty, and use the repository root as the output directory.
+
+## Edit the website
+
+- `index.html`: content and page structure
+- `styles.css`: layout, typography, responsive styles, and CSS animations
+- `app.js`: interactions and the calculator
+- `scenes.js`: 3D objects and interactions
+- `assets/founder.jpg`: founder photograph from the supplied original website
+- `assets/three.module.js`: bundled Three.js v0.170.0
+
+Google Fonts are loaded from the Google Fonts service. 3D models are created locally in the browser. The 3D viewer falls back to a CSS object study if WebGL is unavailable.
+
+The café, jewellery, and retail projects are explicitly labelled illustrative concepts. Calculator results are estimates based on visitor-provided assumptions. The brief builder prepares text for copying to Instagram; it does not send enquiries, collect payments, or save form data to a server.
+
+Three.js is distributed under the MIT license; see `assets/THREE-LICENSE.txt`.
