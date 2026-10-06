@@ -1,1 +1,10 @@
-{"name":"pravah-in-motion","private":true,"type":"module","scripts":{"dev":"node preview.mjs"}}
+{
+  "name": "pravah-in-motion",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node preview.mjs",
+    "build": "node build.mjs"
+  }
+}
